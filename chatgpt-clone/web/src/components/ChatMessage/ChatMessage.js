@@ -8,6 +8,7 @@ import Avatar from "../../assets/avatar";
 }
 */
 export const ChatMessage = ({message}) =>{
+    return(
     <div className = {`chat-message ${message.user ==='gpt' && "chatgpt"}`}>
         <div className="chat-message-center">
             <div className={`avatar ${message.user === 'gpt' && "chatgpt"}`}>
@@ -21,4 +22,5 @@ export const ChatMessage = ({message}) =>{
             </div>
         </div>
     </div>
+    )
 }
