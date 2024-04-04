@@ -1,10 +1,10 @@
-import{useState} from 'react'
+import {useState} from 'react'
 
 import './styles/App.css';
 import './styles/reset.css'
 import { SideMenu } from './components/SideMenu/SideMenu';
-import { makeRequest } from './api/api';
-import { ChatMessage } from './components/ChatMessage/ChatMessage';
+import { makeRequest } from './api/api'
+import { ChatMessage } from './components/ChatMessage/ChatMessage'
 
 
 
@@ -12,12 +12,22 @@ function App() {
 
   const[input, setInput] =useState("")
   const[chatlog, setChatlog] =useState([{
-    user:"gpt"
+    user:"gpt",
     message:"Como posso te ajudar hoje?"
   }])
 
     async function handleSubmit(e){
-        
+        e.preventDefault()
+        let response = await makeRequest({prompt: input})
+
+        response = response.data.split('\n')
+        .map(line => <p>{line}</p>)
+
+        setChatlog([...chatlog, 
+          {user: 'me', message:`${input}`},
+          {user: 'gpt', message: response}
+        ])
+        setInput("")
     }
 
   return (
@@ -27,7 +37,7 @@ function App() {
 
       <section className='chatbox'>
         <div classeName='chat-log'>
-          {cahtlog.map((message, index)=>(<ChatMessage key={index} message={message}/>))}
+          {chatlog.map((message, index)=>(<ChatMessage key={index} message={message}/>))}
         </div>
         <div className='chat-input-holder'>
           <form onSubmit={handleSubmit}>
