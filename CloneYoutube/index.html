@@ -3,61 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Youtube Clone</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/YouTube-icon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a href="#">
-            <img src="assets/img/youtube 1.png" alt="Youtube-logo">
-        </a>
-        <form class="search-bar">
-            <input class="search-input" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button type="submit" class="search-btn">
-                <img src="assets/img/search.png" alt="Pesquisar">
+    <header id="header">
+        <div class="left">
+            <button type="button">
+                <img src="assets/img/menu.png" alt="Menu-sandwish">
             </button>
-            <div class="menu-icons">
-                <a href="#">
-                    <img src="assets/img//video.png" alt="Upload Video">
-                </a>
-                <a href="#"></a>
-                    <img src="assets/img/bell.png" alt="Notifications">
-                </a>
-                <a href="#">
-                    <img src="assets/img/menu.png" alt="Menu">
-                </a>
-                <a href="#"></a>
-                    <img class="menu-channel-icon" src="assets/img/fotoperfil.jpg" alt="Meu Canal">
-                </a>
-            </div>
-        </form>
+            <a href="/">
+                <img src="assets/img/youtube 1.png" alt="Youtube-logo">
+            </a>
+        </div>
+    
+        <div class="middle">
+        <div class="search-box">
+          <input type="text" placeholder="Pesquisar" class="btn-search">
+          <img src="assets/img/search.png" alt="Lupa-Pesquisa" width="25px" height="25px">
+        </div>
+        </div>
+        <div class="right">
+            <button type="button">
+                <img src="assets/img/video.png" alt="Video">
+            </button>
+            <button type="button">
+                <img src="assets/img/bell.png" alt="Notificações">
+            </button>
+            <button type="button" class="btn-profile">
+                <img src="assets/img/fotoperfil.jpg" alt="foto-perfil">
+            </button>
+        </div>
     </header>
-
-    <div class="videos">
-        <section class="video-section">
-            <article class="video-container">
-                <a href="#" class="thumbnail" data-duration="12:24" src="assets/thumbs/Thumb.png"> 
-                </a>
-
-                <div class="video-details">
-                    
-                    <a href="#"> Video Titulo</a>
-                    <a href="#"> Dio</a>
-                    
-
-                    <div class="video-metadata">
-                        //<img src="assets/thumbs/Thumb-1.png" alt="Dio Pyton">
-                        <span>Geração Tech Unimed - BH - Ciência de Dados</span>
-                        <span>DigitalInnovationOne</span>
-                        <span>2,1 mil visualizações
-                            Transmitido há 2 dias</span>//
-
-                    </div>
-
-                </div>
-
-            </article>
-        </section>
-    </div>
 </body>
 </html>
