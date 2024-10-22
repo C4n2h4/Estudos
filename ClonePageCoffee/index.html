@@ -5,54 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerds Tecnologias</title>
     <meta name="description" content="Explore o melhor do café no melhor ambiente.">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <span>NerdsCafé</span>
-            <menu>
-                <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>Receitas</li>
-                <li><a href="#"></a>Novidades</li>
-                <li><a href="#"></a>Melhores Avaliações</li>
-            </menu>
-            <a href="#">GitHub</a>
+            <span class="logo">Ballecoffee</span>
+                <ul class="menu">
+                    <li><a href="#"></a>Home</li>
+                    <li><a href="#"></a>Receitas</li>
+                    <li><a href="#"></a>Novidades</li>
+                    <li><a href="#"></a>Melhores Avaliações</li> 
+                </ul>
+                <a class="github">GitHub</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <header>
-                <span>Novidade</span>
-                <h1>Encontre a receita perfeita</h1>
-                <hr>
-                <h2>Exploque dezenas de variações da bebida favorita entre os devs ao redor do mundo!</h2>
-                <div>
-                    <figure>
-                        <img src="assets/img/img1.jpg" alt="">
-                        <img src="assets/img/img2.jpg" alt="">
-                        <img src="assets/img/img3.jpg" alt="">
-                        <img src="assets/img/img4.jpg" alt="">
-                        <img src="assets/img/img5.jpg" alt="">
-                        <img src="assets/img/img6.jpg" alt="">
-                        <img src="assets/img/img7.jpg" alt="">
-                        <img src="assets/img/img8.jpg" alt="">
-                        <img src="assets/img/img9.jpg" alt="">
-                        <img src="assets/img/img10.jpg" alt="">
-                        <img src="assets/img/img11.jpg" alt="">
-                        <img src="assets/img/img12.jpg" alt="">
-                    </figure>
-                </div>
-            </header>
-            <div></div>
+        <div class="principal">
+            <section class="hero">
+                    <header hero-conteudo>
+                        <span class="destaque marrom">Novidade</span>
+                        <h1>Encontre a receita perfeita</h1>
+                        <hr>
+                        <h2 class="hero-subtitulo">Explore dezenas de variações da bebida favorita entre os Devs ao redor do mundo!</h2>
+                    </header>
+                    <div class="hero-img-container">
+                        <figure>
+                            <img src="assets/img/img1.jpg" alt="">
+                            <img src="assets/img/img2.jpg" alt="">
+                            <img src="assets/img/img3.jpg" alt="">
+                            <img src="assets/img/img4.jpg" alt="">
+                            <img src="assets/img/img5.jpg" alt="">
+                            <img src="assets/img/img6.jpg" alt="">
+                            <img src="assets/img/img7.jpg" alt="">
+                            <img src="assets/img/img8.jpg" alt="">
+                            <img src="assets/img/img9.jpg" alt="">
+                            <img src="assets/img/img10.jpg" alt="">
+                            <img src="assets/img/img11.jpg" alt="">
+                            <img src="assets/img/img12.jpg" alt="">
+                        </figure>
+                    </div>
+            </section>
+        </div>
+        <section class="botão-container">
+            <button type="button">
+                <img src="assets/img/chevrons-down.svg" alt="Botão para rolar para baixo">
+            </button>
         </section>
-        <section>
 
+        <section class="receitas">
+            <header>
+                <span>Receitas</span>
+                <h2>Confira as ultimas receitas<h2>
+                <p>Dê uma olhada nas receitas mais amadas!</p>
+            </header>
+                <div>
+                    <div>
+                        <header>
+                            <div>
+                                <span>Em Alta🔥</span>
+                                <h3>Cappuccino</h3>
+                            </div>
+                            <p>Extraordinário · 4/4</p>
+                        </header>
+                        <p>Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+                        <div>
+                            <img src="assets/img/Avatar-Ballerini.png" alt="">
+                            <span>Rafaella Ballerini</span>
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
 
     <footer>
-
+        <p>Copyright &lt;CODEFEE/&gt; 2023</p>
+        <p>Feito com muito ❤ e café por Rafaella Ballerini</p>
     </footer>
 
 </body>
